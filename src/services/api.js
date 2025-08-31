@@ -77,7 +77,7 @@ export const bookingService = {
   create: async (bookingData) => {
     const response = await api.post('/api/bookings2', bookingData);
     return response.data;
-  },
+  }, 
   
   // NEW: Create payment hold (reserves equipment for 10 minutes)
   createPaymentHold: async (bookingData) => {

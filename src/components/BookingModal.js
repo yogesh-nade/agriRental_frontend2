@@ -153,7 +153,7 @@ const BookingModal = ({ equipment, isOpen, onClose, userId }) => {
       } else {
         bookingData.selectedDates = formData.selectedDates;
       }
-
+ 
       // Create payment hold instead of direct booking
       const result = await bookingService.createPaymentHold(bookingData);
       toast.success('Equipment reserved for 10 minutes. Complete payment to confirm booking.');
